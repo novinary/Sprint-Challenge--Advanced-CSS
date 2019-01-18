@@ -1,1 +1,37 @@
 // Mixins Here
+//flex
+.flex(@direction) {
+    display: flex;
+    flex-direction: @direction;
+}
+
+.width(@percent) {
+    width: @percent;
+}
+
+// margin & border
+#spaceMixins()
+{
+    .marginTopBottom(){
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .border {
+    border-bottom: 1px dashed @silver;
+    border-bottom-width:0.2rem;
+    }
+}
+
+// nav font
+#fontMixins () {
+  
+    .bold () {
+      font-weight: bold;
+    }
+  
+    .normalize () {
+      text-decoration: none;
+      color: black;
+    }
+  }
+  
